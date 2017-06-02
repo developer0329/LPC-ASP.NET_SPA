@@ -60,4 +60,7 @@ E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\System.Web.Web
 E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\System.Web.WebPages.Razor.xml
 E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\obj\Debug\LPC.dll
 E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\obj\Debug\LPC.pdb
-E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\obj\Debug\LPC.csprojResolveAssemblyReference.cache
+E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\NWebsec.Core.dll
+E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\NWebsec.dll
+E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\NWebsec.xml
+E:\01-RiYN\Job List\16-12-20 FL(ASP.NET Web App)\work\LPC\LPC\bin\NWebsec.Core.xml

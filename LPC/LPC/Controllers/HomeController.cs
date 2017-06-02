@@ -9,8 +9,8 @@ using System.Web.Mvc;
 namespace LPC.Controllers
 {
     public class HomeController : Controller
-    {	
-	    /*
+    {
+        /*
          * This is a Controller for Login Page 
          * 
         **/
@@ -110,6 +110,7 @@ namespace LPC.Controllers
          * 
         **/
         [HttpPost]
+        [RequireHttps]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
