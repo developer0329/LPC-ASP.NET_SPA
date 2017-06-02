@@ -13,7 +13,7 @@
         <li class="media">
             <div class="media-left">
                 <a href="#">
-                    <img alt="64x64" class="media-object" src="~/images/teacher.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                    <img alt="64x64" class="media-object" src="~/images/teacher.png" data-holder-rendered="true">
                 </a>
             </div>
             <div class="media-body">
@@ -26,7 +26,7 @@
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img alt="64x64" class="media-object" src="~/images/student.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                <img alt="64x64" class="media-object" src="~/images/student.png" data-holder-rendered="true">
                             </a>
                         </div>
                         <div class="media-body">
@@ -55,7 +55,7 @@
                             @Html.EditorFor(model => model.content, new { htmlAttributes = new { @class = "form-control" } })
                             @Html.ValidationMessageFor(model => model.content, "", new { @class = "text-danger" })
                         </div>
-                        <button type="submit" class="btn btn-success col-sm-2" style="margin-top: 17px;">Comment</button>
+                        <button type="submit" class="btn btn-success col-sm-2 comment-btn" >Comment</button>
                     </div>
                 </div>
             }
