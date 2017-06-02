@@ -1,0 +1,27 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select{
+    max-width: 280px;
+}
+#new-post-form input{
+    max-width:100%;
+}
+.media-footer{
+    text-align:right;
+}
+.media-list li{
+    padding: 15px 20px;
+    border: solid 1px gray;
+    border-radius: 4px;
+}
