@@ -12,7 +12,7 @@ namespace LPC.Models
     {
         private static string connStr = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         MySqlConnection conn = new MySqlConnection(connStr);
-
+        Utils utils = new Utils();
         /**
          * User Login
          * param : LoginModel
@@ -23,7 +23,7 @@ namespace LPC.Models
             try
             {
                 conn.Open();
-                String query = "SELECT * FROM user WHERE email='" + lm.Email + "' AND password='" + lm.Password + "';";
+                String query = "SELECT * FROM user WHERE email='" + lm.Email + "' AND password='" + utils.Hash(lm.Password) + "';";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader mdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 LoginUser result =  null;
@@ -43,12 +43,15 @@ namespace LPC.Models
                 conn.Close();
                 
                 //Update Seen Log
-                Log log = new Log();
-                LogModel logModel = new LogModel();
-                logModel.user_id = result.id;
-                logModel.seen_time = DateTime.Now;
+                if(result != null)
+                {
+                    Log log = new Log();
+                    LogModel logModel = new LogModel();
+                    logModel.user_id = result.id;
+                    logModel.seen_time = DateTime.Now;
 
-                log.insertUpdateLog(logModel);
+                    log.insertUpdateLog(logModel);
+                }
 
                 return result;
             }
